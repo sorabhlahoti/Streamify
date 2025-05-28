@@ -1,67 +1,71 @@
 # ✨ Fullstack Chat & Video Calling App ✨
 
-## 🚀 Project Highlights
-
-- 🌐 Real-time messaging with typing indicators and message reactions  
-- 📹 1-on-1 and group video calls with screen sharing and recording  
-- 🔐 JWT-based authentication and protected routes  
-- 🌍 Language exchange platform with 32 unique UI themes  
-- ⚡ Built with React, Express, MongoDB, Tailwind CSS, TanStack Query  
-- 🧠 Global state management using Zustand  
-- 🚨 Robust error handling on frontend and backend  
-- 🎯 Scalable architecture leveraging Stream technologies  
-- 🚀 Ready for production deployment  
+This is a fullstack application offering real-time chat and video calling functionalities.
 
 ---
 
 ## 🛠️ Setup & Installation
 
-### Backend Setup (`/backend`)
+To get this project up and running, follow the steps below for both the backend and frontend.
 
-Create a `.env` file in the `backend` folder:
+### 🔧 Backend Setup (`/backend`)
 
-PORT=5001
-MONGO_URI=your_mongo_uri
-STEAM_API_KEY=your_steam_api_key
-STEAM_API_SECRET=your_steam_api_secret
-JWT_SECRET_KEY=your_jwt_secret
-NODE_ENV=development
+1.  **Create a `.env` file** inside the `/backend` folder with the following contents. Make sure to replace the placeholder values with your actual keys and URIs:
 
+    ```
+    PORT=5001
+    MONGO_URI=your_mongo_uri
+    STEAM_API_KEY=your_steam_api_key
+    STEAM_API_SECRET=your_steam_api_secret
+    JWT_SECRET_KEY=your_jwt_secret
+    NODE_ENV=development
+    ```
 
-Install dependencies and run backend server:
+2.  **Install dependencies and run the server**:
 
-```bash
-cd backend
-npm install
-npm run dev
-Frontend Setup (/frontend)
-Create a .env file in the frontend folder:
+    ```bash
+    cd backend
+    npm install
+    npm run dev
+    ```
 
-VITE_STREAM_API_KEY=your_stream_api_key
-Install dependencies and run frontend server:
+### 💻 Frontend Setup (`/frontend`)
 
+1.  **Create a `.env` file** inside the `/frontend` folder with the following content, replacing `your_stream_api_key` with your actual Stream API key:
 
-cd frontend
-npm install
-npm run dev
-🎥 Features
-Real-time chat with online status, typing indicators, and reactions
+    ```
+    VITE_STREAM_API_KEY=your_stream_api_key
+    ```
 
-1-on-1 and group video calls with screen sharing & recording
+2.  **Install dependencies and run the client**:
 
-JWT authentication with onboarding flows and protected routes
+    ```bash
+    cd frontend
+    npm install
+    npm run dev
+    ```
 
-Multiple UI themes for personalized user experience
+---
 
-Friends system and social interactions
+## 🎥 Features
 
-Tested APIs and error handling for reliability
+* **🌐 Real-time Chat**: Enjoy real-time chat with online status, typing indicators, and message reactions.
+* **📹 Video Calls**: Conduct 1-on-1 and group video calls, including screen sharing and recording capabilities.
+* **🔐 Secure Authentication**: Features JWT authentication with intuitive onboarding flows and protected routes for enhanced security.
+* **🎨 Multiple UI Themes**: Personalize your experience with a variety of UI themes.
+* **👥 Friends System**: Connect with others through a robust friends system and social interaction features.
+* **🚨 Robust APIs**: Benefit from robust error handling and well-tested APIs for reliable performance.
 
-📂 Folder Structure
-bash
-Copy
-Edit
-/backend     # Express server, APIs, models
-/frontend    # React app, components, pages, styles
-🤝 Contributing
-Contributions are welcome! Feel free to open issues or submit pull requests.
+---
+
+## 📂 Project Structure
+```
+.
+├── /backend         # Express server, APIs, and Mongoose models
+└── /frontend        # React app, components, pages, and styles
+```
+---
+
+## 🤝 Contributing
+
+Contributions are always welcome! If you have suggestions for improvements, feel free to open an issue or submit a pull request.
